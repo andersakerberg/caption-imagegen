@@ -31,8 +31,6 @@ const ImageUpload: React.FC = () => {
       //@ts-ignore
       setBase64Image(reader.result.split(",")[1]); // Skip 'data:image/png;base64,' prefix
       //@ts-ignore
-      console.log(reader.result.split(",")[1]);
-      //@ts-ignore
       const responseFromApi = await generateCaptions(
         //@ts-ignore
         reader.result.split(",")[1]
@@ -74,7 +72,6 @@ const ImageUpload: React.FC = () => {
       )}
       {predictions &&
         predictions.map((text, i) => {
-          console.log(text);
           // Return the element. Also pass key
           return <p key={i}>{text}</p>;
         })}

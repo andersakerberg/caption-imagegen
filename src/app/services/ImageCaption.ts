@@ -1,4 +1,3 @@
-"use server";
 import { JWT, GoogleAuth } from "google-auth-library";
 
 interface ServiceAccount {
@@ -57,7 +56,7 @@ export async function generateCaptions(base64Image: string): Promise<string[]> {
 
 const credential = JSON.parse(
     //@ts-ignore
-    Buffer.from(process.env.GOOGLE_SERVICE_KEY, "base64").toString()
+    Buffer.from(process.env.NEXT_PUBLIC_GOOGLE_SERVICE_KEY, "base64").toString()
 );
 
 async function getAccessToken(): Promise<string> {
@@ -69,7 +68,5 @@ async function getAccessToken(): Promise<string> {
         },
     });
     const idToken = await client.getAccessToken();
-    console.log(idToken)
     return idToken!;
-    //return "ya29.a0AfB_byCrDI-kRbUHgA1syOe1XImuLHMqNxGKz4fCZ3RHLGgekjd_vsKo5YOyLz0B34rkg3ZYWjY3E-t_Pas0L2oo9hx4x2fsmUZEmqPJvs2WASZw1tj8GI7h2RuaJ_GQ5eH8NQ5t3kDmtIvH05kkvxlpbPOxPLAb3QaCgYKAUcSARISFQHGX2MiG9tMh-SeArbJhSyJ8Iw7KA0169"
 }
