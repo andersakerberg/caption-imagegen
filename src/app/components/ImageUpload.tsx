@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { CaptionGenerator } from "../services/ImageCaption";
-
-const capGen = new CaptionGenerator();
+import { generateCaptions } from "../services/ImageCaption";
 
 interface ImageFile {
   name: string;
@@ -35,7 +33,7 @@ const ImageUpload: React.FC = () => {
       //@ts-ignore
       console.log(reader.result.split(",")[1]);
       //@ts-ignore
-      const responseFromApi = await capGen.generateCaptions(
+      const responseFromApi = await generateCaptions(
         //@ts-ignore
         reader.result.split(",")[1]
       );

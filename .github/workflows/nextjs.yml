@@ -39,10 +39,15 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo GOOGLE_SERVICE_KEY=${{ secrets.GOOGLE_SERVICE_KEY }} >> .env
+          cat .env
       - name: Build with Next.js
         run: npm run build
       - run: ls -lash
-      - run: cat next.config.mjs
+      - run: cat .env
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
