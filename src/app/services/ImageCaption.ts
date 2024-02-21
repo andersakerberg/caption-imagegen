@@ -42,6 +42,10 @@ export class CaptionGenerator {
                             bytesBase64Encoded: base64Image,
                         },
                     }],
+                    parameters: {
+                        sampleCount: 3,
+                        language: "en"
+                    }
                 }),
             });
 
