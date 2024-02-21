@@ -43,7 +43,7 @@ export class CaptionGenerator {
                         },
                     }],
                     parameters: {
-                        sampleCount: 3,
+                        sampleCount: 1,
                         language: "en"
                     }
                 }),

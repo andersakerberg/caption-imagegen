@@ -53,11 +53,24 @@ const ImageUpload: React.FC = () => {
 
   return (
     <div>
-      <input type="file" onChange={handleFileChange} accept="image/*" />
-      <button onClick={handleUpload}>Upload Image</button>
+      <input
+        className="browse-button"
+        type="file"
+        onChange={handleFileChange}
+        accept="image/*"
+      />
+      <button className="upload-button" onClick={handleUpload}>
+        Upload Image
+      </button>
 
       {base64Image && <p>Base64 image: {base64Image.slice(0, 50)}</p>}
-      {base64Image && <img src={`data:image/jpeg;base64,${base64Image}`} />}
+      {base64Image && (
+        <img
+          width={400}
+          height={400}
+          src={`data:image/jpeg;base64,${base64Image}`}
+        />
+      )}
       {isGenerating && (
         <div className="loader">Please wait while we load the resulsts...</div>
       )}

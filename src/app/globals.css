@@ -31,3 +31,63 @@ body {
     text-wrap: balance;
   }
 }
+
+.upload-button {
+  background-color: #28a745; /* Green color */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Allow text wrapping */
+  transition: background-color 0.2s ease-in-out; /* Smoother hover effect */
+}
+
+.upload-button:hover {
+  background-color: #1e843b; /* Darker green on hover */
+}
+
+/* Optional for different text color in hover state: */
+.upload-button:hover span {
+  color: #ddd; /* Light gray text on hover */
+}
+
+/* Optional for adding an icon: */
+.upload-button span {
+  margin-right: 5px;
+}
+
+.upload-button i {
+  font-size: 18px;
+}
+
+.browse-button {
+  background-color: #e0e0e0; /* Light gray color */
+  color: #333; /* Darker gray text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Allow text wrapping */
+  transition: background-color 0.2s ease-in-out; /* Smoother hover effect */
+}
+
+.browse-button:hover {
+  background-color: #d0d0d0; /* Slightly darker gray on hover */
+}
+
+/* Optional for different text color in hover state: */
+.browse-button:hover span {
+  color: #666; /* Darker gray text on hover */
+}
+
+/* Optional for adding an icon: */
+.browse-button span {
+  margin-right: 5px;
+}
+
+.browse-button i {
+  font-size: 18px;
+}
