@@ -58,6 +58,6 @@ export class CaptionGenerator {
     }
 
     private getAccessToken(): string {
-        return "ya29.a0AfB_byA8-pp0B6U0wduSJjDpIcjIH7V3aWYA8Vq9cCEWZNzxoeEiVkQmpMuh4WDNkpK4X9HxgLFgKGrW-RmnYooSyYhj0LS5raOre82Q8FUwCUWHNQB2rTJ3L_Pu2zL1lLGL5_xffwSwrPnmuw6Ee5YXN_c8A5oVTQaCgYKAdcSARISFQHGX2MifOe0Im2mqOWTjUT742TKVw0169"
+        return "ya29.a0AfB_byCrDI-kRbUHgA1syOe1XImuLHMqNxGKz4fCZ3RHLGgekjd_vsKo5YOyLz0B34rkg3ZYWjY3E-t_Pas0L2oo9hx4x2fsmUZEmqPJvs2WASZw1tj8GI7h2RuaJ_GQ5eH8NQ5t3kDmtIvH05kkvxlpbPOxPLAb3QaCgYKAUcSARISFQHGX2MiG9tMh-SeArbJhSyJ8Iw7KA0169"
     }
 }
