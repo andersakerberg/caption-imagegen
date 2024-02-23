@@ -5,6 +5,10 @@ import ImageUpload from "./components/ImageUpload";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <img
+        className="logo"
+        src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/45_Bitcoin_logo_logos-512.png"
+      ></img>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <ImageUpload />
       </div>
